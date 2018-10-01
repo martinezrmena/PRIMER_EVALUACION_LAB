@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/membership"
+        android:cropToPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/MainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        app:fab_addButtonColorNormal="@color/colorDarkPurple"
+        app:fab_addButtonColorPressed="@color/colorPurple"
+        app:fab_addButtonPlusIconColor="#ffff"
+        app:fab_labelStyle="@style/menu_labels_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnRegistrarEstudiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnRegistroClick"
+            app:fab_colorNormal="@color/colorPurple"
+            app:fab_colorPressed="@color/colorDarkPurple"
+            app:fab_icon="@drawable/register"
+            app:fab_size="mini"
+            app:fab_title="Nuevo Encuestado" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnListaEstudiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnViewListaRegistroClick"
+            app:fab_colorNormal="@color/colorPurple"
+            app:fab_colorPressed="@color/colorDarkPurple"
+            app:fab_icon="@drawable/list"
+            app:fab_size="mini"
+            app:fab_title="Lista encuestado"
+            app:layout_constraintBottom_toTopOf="@+id/MainButton" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.constraint.ConstraintLayout>

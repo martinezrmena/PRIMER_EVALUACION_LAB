@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".NuevoRegistro">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Registro de Estudiantes"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/Linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Nombre" />
+
+                <EditText
+                    android:id="@+id/txbNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toStartOf="@+id/textView4"
+                    android:hint="Escriba el nombre" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Linear"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Código" />
+
+                <EditText
+                    android:id="@+id/txbCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toStartOf="@+id/textView4"
+                    android:hint="Escriba el código" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Linear2"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Materia" />
+
+                <EditText
+                    android:id="@+id/txbMateria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toStartOf="@+id/textView4"
+                    android:hint="Escriba la materia" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Linear3"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Primer Parcial" />
+
+                <EditText
+                    android:id="@+id/txbPrimerParcial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:layout_alignParentRight="true"
+                    android:layout_toStartOf="@+id/textView4"
+                    android:hint="Escriba la nota" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Linear4"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Segundo Parcial" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/txbSegundoParcial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toStartOf="@+id/textView4"
+                    android:hint="Escriba la nota" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Linear5"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Tercer Parcial" />
+
+                <EditText
+                    android:inputType="numberDecimal"
+                    android:id="@+id/txbTercerParcial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toStartOf="@+id/textView4"
+                    android:hint="Escriba la nota" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Linear5">
+
+                <Button
+                    android:id="@+id/btnProcesar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="@color/colorDarkPurple"
+                    android:onClick="btnProcesarClick"
+
+                    android:text="GUARDAR"
+                    android:textColor="#ffff" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
