@@ -51,7 +51,7 @@
             app:fab_colorPressed="@color/colorDarkPurple"
             app:fab_icon="@drawable/register"
             app:fab_size="mini"
-            app:fab_title="Nuevo Encuestado" />
+            app:fab_title="Nuevo Estudiante" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnListaEstudiante"
@@ -62,7 +62,7 @@
             app:fab_colorPressed="@color/colorDarkPurple"
             app:fab_icon="@drawable/list"
             app:fab_size="mini"
-            app:fab_title="Lista encuestado"
+            app:fab_title="Lista estudiantes"
             app:layout_constraintBottom_toTopOf="@+id/MainButton" />
 
 
