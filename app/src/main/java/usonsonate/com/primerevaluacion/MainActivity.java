@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             );
 
             lstEstudiante.add(e);
+            btnListaEstudiante.setTitle("Lista Estudiantes " + lstEstudiante.size());
             Toast.makeText(this, "Estudiante ingresado exitosamente.", Toast.LENGTH_SHORT).show();
         }
     }

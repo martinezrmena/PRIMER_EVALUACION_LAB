@@ -120,7 +120,7 @@
                     android:inputType="numberDecimal"
                     android:layout_alignParentRight="true"
                     android:layout_toStartOf="@+id/textView4"
-                    android:hint="Escriba la nota" />
+                    android:hint="Primer Parcial       : 30%" />
             </LinearLayout>
 
             <LinearLayout
@@ -143,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_toStartOf="@+id/textView4"
-                    android:hint="Escriba la nota" />
+                    android:hint="Segundo Parcial   : 30%" />
             </LinearLayout>
 
             <LinearLayout
@@ -166,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_toStartOf="@+id/textView4"
-                    android:hint="Escriba la nota" />
+                    android:hint="Tercer Parcial        : 40%" />
             </LinearLayout>
 
             <RelativeLayout

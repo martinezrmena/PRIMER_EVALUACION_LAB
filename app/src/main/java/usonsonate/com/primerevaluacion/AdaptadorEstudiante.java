@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
 public class AdaptadorEstudiante extends ArrayAdapter<Estudiante> {
@@ -25,11 +27,14 @@ public class AdaptadorEstudiante extends ArrayAdapter<Estudiante> {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_estudiante, parent, false);
         }
+
+        TextView lblId = (TextView) convertView.findViewById(R.id.lblId);
         TextView lblNombre = (TextView) convertView.findViewById(R.id.lblNombre);
         TextView lblCodigo = (TextView) convertView.findViewById(R.id.lblCodigo);
         TextView lblMateria = (TextView) convertView.findViewById(R.id.lblMateria);
 
         // mostrar los datos
+        lblId.setText((position + 1) + "");
         lblNombre.setText(estudiante.getNombre());
         lblCodigo.setText(estudiante.getCodigo());
         lblMateria.setText(estudiante.getMateria()+ " " + estudiante.getPromedio().toString());
